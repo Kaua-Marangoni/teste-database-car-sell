@@ -9,13 +9,13 @@ class App {
   constructor() {
     this.app = express()
 
-    const corsOptions = {
-      origin: "http://localhost:3000",
-      credentials: true, // access-control-allow-credentials:true
-      optionSuccessStatus: 200
-    }
+    // const corsOptions = {
+    //   origin: "https://car-sell-brasil.vercel.app/",
+    //   credentials: true, // access-control-allow-credentials:true
+    //   optionSuccessStatus: 200
+    // }
 
-    this.app.use(cors(corsOptions))
+    this.app.use(cors())
 
     this.middlewares()
     this.routes()
